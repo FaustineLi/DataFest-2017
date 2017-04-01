@@ -6,14 +6,17 @@ output: html_notebook
 ```{r, warning=FALSE, message=FALSE}
 library(readr)
 library(dplyr)
+library(data.table)
 ```
  
 ```{r}
-expedia = read_tsv('data/data.txt')
+expedia = read_tsv('data.txt')
+expedia = fread('data.txt')
 ```
 
 ```{r}
-dest = read_tsv('data/dest.txt')
+dest = read_tsv('dest.txt')
+dest = fread('dest.txt')
 ```
 
 ```{r}
@@ -56,5 +59,73 @@ merged = inner_join(users, hotels,
 ```
 
 ```{r}
-merged = merged %>% mutate(net = n.y - n.x)
+merged = merged %>% mutate(net = log(abs(n.y - n.x)) * sign(n.y - n.x))
 ```
+
+```{r}
+library("ggmap")
+library(ggplot2)
+library(devtools)
+install_version("ggplot2", version = "2.1.0", repos = "http://cran.us.r-project.org")
+```
+
+
+
+
+```{r}
+# overall map
+map = get_map(location='united states', zoom=4, maptype = "roadmap", source='google',color='color')
+
+ggmap(map) + geom_point(
+        aes(x=user_long, y=user_lat, show_guide = TRUE, colour=sign(net)), 
+        data=merged, alpha=0.5, na.rm = T,size = 4.5)  + 
+        scale_color_gradient(low="red", high="blue")
+  
+
+
+```
+
+```{r}
+# Seasonal
+data = expedia %>% 
+    filter(is_booking == 1, 
+           user_location_country %in% 
+               c('UNITED STATES OF AMERICA', 'CANADA', 'MEXICO'),
+           hotel_country %in% c('UNITED STATES OF AMERICA', 'CANADA', 'MEXICO')) %>%
+    inner_join(dest, 'srch_destination_id') %>%
+    select(user_location_latitude, 
+           user_location_longitude, 
+           srch_destination_latitude, 
+           srch_destination_longitude,
+           srch_ci,
+           srch_adults_cnt,
+           srch_children_cnt) %>%
+    filter(user_location_latitude != 'NULL', 
+           user_location_longitude != 'NULL',
+           srch_destination_latitude != 'NULL',
+           srch_destination_longitude != 'NULL',
+           srch_ci != 'NULL',
+           srch_adults_cnt != 'NULL',
+           srch_children_cnt != 'NULL')
+
+data[,-5] = apply(data[,-5], 1, as.numeric)
+data[,-5] = round(data[,-5])
+data = data.frame(data)
+colnames(data) = c('user_lat', 'user_long', 'book_lat', 'book_long','check_in_date','num_adt','num_chd')
+
+data %>% mutate(month = grep(x = data[1,5],pattern = "(.*)(-)(d{2})(-)(.*)","\\3",value = TRUE))
+
+```
+
+
+```{r}
+#JAN-MAR
+data_season1 = data %>% 
+#APR-JUN
+data_season2 = 
+#JUL-SEP
+data_season3 = 
+
+#OCT-DEC
+data_season4 = 
+````
