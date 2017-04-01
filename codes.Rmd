@@ -1,0 +1,26 @@
+---
+title: 'Codes Sharing'
+author: 'Five Sigma'
+date: "Due March 10, 2016"
+output:
+  html_document: default
+  html_notebook: default
+  pdf_document: default
+---
+
+
+```{r setup, warning=FALSE, echo=FALSE}
+suppressMessages(library(dplyr))
+library(readr)
+income = read_csv("~/DataFest2017/DataFest-2017/income.csv")
+income = income %>% rename(zip_code = Zip)
+zip = read_csv("~/DataFest2017/DataFest-2017/zip_codes_states.csv")
+```
+
+
+```{r}
+dat <- dplyr::left_join(income, select(zip, city, state, county), by="zip_code")
+
+```
+
+
