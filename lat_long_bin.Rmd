@@ -1,0 +1,59 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r, warning=FALSE, message=FALSE}
+library(readr)
+library(dplyr)
+```
+ 
+```{r}
+expedia = read_tsv('data/data.txt')
+```
+
+```{r}
+dest = read_tsv('data/dest.txt')
+```
+
+```{r}
+data = expedia %>% 
+    filter(is_booking == 1, 
+           user_location_country %in% 
+               c('UNITED STATES OF AMERICA', 'CANADA', 'MEXICO'),
+           hotel_country %in% c('UNITED STATES OF AMERICA', 'CANADA', 'MEXICO')) %>%
+    inner_join(dest, 'srch_destination_id') %>%
+    select(user_location_latitude, 
+           user_location_longitude, 
+           srch_destination_latitude, 
+           srch_destination_longitude) %>%
+    filter(user_location_latitude != 'NULL', 
+           user_location_longitude != 'NULL',
+           srch_destination_latitude != 'NULL',
+           srch_destination_longitude != 'NULL')
+
+data = apply(data, 1, as.numeric)
+data = data.frame(round(data))
+data = t(data)
+```
+
+Sources and Sinks
+
+```{r}
+users = data %>% 
+    group_by(user_lat, user_long) %>%
+    count()
+
+hotels = data %>% 
+    group_by(book_lat, book_long) %>%
+    count()
+```
+
+```{r}
+merged = inner_join(users, hotels, 
+                    by=c("user_lat" = "book_lat", 'user_long' = 'book_long'))
+```
+
+```{r}
+merged = merged %>% mutate(net = n.y - n.x)
+```
