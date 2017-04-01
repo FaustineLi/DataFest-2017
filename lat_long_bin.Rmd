@@ -33,8 +33,9 @@ data = expedia %>%
            srch_destination_longitude != 'NULL')
 
 data = apply(data, 1, as.numeric)
-data = data.frame(round(data))
 data = t(data)
+data = data.frame(round(data))
+colnames(data) = c('user_lat', 'user_long', 'book_lat', 'book_long')
 ```
 
 Sources and Sinks
