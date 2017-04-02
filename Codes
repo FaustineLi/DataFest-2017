@@ -12,15 +12,38 @@ data = fread("data.txt")
 dest = fread("dest.txt")
 ```
 
+```{r}
+## distance function
+d <- function (long1, lat1, long2, lat2)
+{
+rad <- pi/180
+a1 <- lat1 * rad
+a2 <- long1 * rad
+b1 <- lat2 * rad
+b2 <- long2 * rad
+dlon <- b2 - a2
+dlat <- b1 - a1
+a <- (sin(dlat/2))^2 + cos(a1) * cos(b1) * (sin(dlon/2))^2
+c <- 2 * atan2(sqrt(a), sqrt(1 - a))
+R <- 6378.145
+d <- R * c
+return(d)
+}
+```
 
 ```{r}
-data_sec = data[, c("date_time", "user_id", "srch_destination_id", "is_booking")]
-dest_sec = dest[, 1:2]
+data_sec = data[, c("user_location_latitude", "user_location_longitude", "date_time", "user_id", "srch_destination_id", "is_booking")]
+dest_sec = dest[, c(1:2, 4, 5)]
+
 ## sample data
-index = sample(dim(data_sec)[1], 10000)
+index = sample(dim(data_sec)[1], 300000)
 df_sec = merge(data_sec, dest_sec, by="srch_destination_id")[index, ]
 df_sec = na.omit(df_sec)
 
+## distance criterion
+df_sec = df_sec %>% 
+  mutate(dis = d(as.numeric(user_location_longitude), as.numeric(user_location_latitude), as.numeric(srch_destination_longitude), as.numeric(srch_destination_latitude))) %>% 
+  filter(dis >= 500 * 1.61)
 
 ## clean date
 Month = data.frame(matrix(NA, nrow = length(df_sec$date_time), ncol=1))
@@ -93,10 +116,19 @@ for(i in 1:length(df_s1_0$user_id)){
     df_s1_final = rbind(df_s1_final, here)
   }
 }
-df_s1_final %>% group_by(city) %>%
-  summarize(count = n()) %>%
-  arrange(desc(count)) %>%
-  slice(1:5)
+#df_s1_final %>% group_by(city) %>%
+#  summarize(count = n()) %>%
+#  arrange(desc(count)) %>%
+#  slice(1:5)
+
+df_s1_final = df_s1_final %>% group_by(city) %>%
+  summarize(count_no = n()) %>%
+  arrange(desc(count_no))
+df_s1_1 = df_s1_1 %>% group_by(city) %>%
+  summarize(count_yes = n()) %>%
+  arrange(desc(count_yes))
+df_s1_comb = merge(df_s1_final, df_s1_1, by="city")
+df_s1_comb 
 ```
 
 ## Summer
@@ -122,10 +154,14 @@ for(i in 1:length(df_s2_0$user_id)){
     df_s2_final = rbind(df_s2_final, df_s2_0[i, ])
   }
 }
-df_s2_final %>% group_by(city) %>%
-  summarize(count = n()) %>%
-  arrange(desc(count)) %>% 
-  slice(1:5)
+df_s2_final = df_s2_final %>% group_by(city) %>%
+  summarize(count_no = n()) %>%
+  arrange(desc(count_no))
+df_s2_1 = df_s2_1 %>% group_by(city) %>%
+  summarize(count_yes = n()) %>%
+  arrange(desc(count_yes))
+df_s2_comb = merge(df_s2_final, df_s2_1, by="city")
+df_s2_comb 
 ```
 
 ## Fall
@@ -151,10 +187,14 @@ for(i in 1:length(df_s3_0$user_id)){
     df_s3_final = rbind(df_s3_final, df_s3_0[i, ])
   }
 }
-df_s3_final %>% group_by(city) %>%
-  summarize(count = n()) %>%
-  arrange(desc(count)) %>%
-  slice(1:5)
+df_s3_final = df_s3_final %>% group_by(city) %>%
+  summarize(count_no = n()) %>%
+  arrange(desc(count_no))
+df_s3_1 = df_s3_1 %>% group_by(city) %>%
+  summarize(count_yes = n()) %>%
+  arrange(desc(count_yes))
+df_s3_comb = merge(df_s3_final, df_s3_1, by="city")
+df_s3_comb 
 ```
 
 ## Winter
@@ -180,8 +220,12 @@ for(i in 1:length(df_s4_0$user_id)){
     df_s4_final = rbind(df_s4_final, df_s4_0[i, ])
   }
 }
-df_s4_final %>% group_by(city) %>%
-  summarize(count = n()) %>%
-  arrange(desc(count)) %>%
-  slice(1:5)
+df_s4_final = df_s4_final %>% group_by(city) %>%
+  summarize(count_no = n()) %>%
+  arrange(desc(count_no))
+df_s4_1 = df_s4_1 %>% group_by(city) %>%
+  summarize(count_yes = n()) %>%
+  arrange(desc(count_yes))
+df_s4_comb = merge(df_s4_final, df_s4_1, by="city")
+df_s4_comb 
 ```
