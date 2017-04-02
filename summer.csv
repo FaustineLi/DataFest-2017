@@ -1,223 +1,223 @@
-"city"	"count_no"	"count_yes"	"ratio"
-"1"	"Miami Beach"	114	2	0.982758620689655
-"2"	"Manhattan"	50	1	0.980392156862745
-"3"	"Myrtle Beach"	48	1	0.979591836734694
-"4"	"Hawaii"	43	1	0.977272727272727
-"5"	"Atlanta"	36	1	0.972972972972973
-"6"	"San Diego"	122	4	0.968253968253968
-"7"	"Oahu Island"	83	3	0.965116279069767
-"8"	"Maui Island"	103	4	0.962616822429907
-"9"	"Orlando"	255	10	0.962264150943396
-"10"	"Los Angeles"	124	5	0.961240310077519
-"11"	"Charleston"	22	1	0.956521739130435
-"12"	"South Beach"	44	2	0.956521739130435
-"13"	"St. Petersburg - Clearwater"	22	1	0.956521739130435
-"14"	"Yosemite National Park"	22	1	0.956521739130435
-"15"	"Las Vegas"	589	28	0.954619124797407
-"16"	"Honolulu"	42	2	0.954545454545455
-"17"	"Miami"	210	10	0.954545454545455
-"18"	"Fort Lauderdale"	96	5	0.95049504950495
-"19"	"Austin"	19	1	0.95
-"20"	"Fort Walton Beach - Destin"	19	1	0.95
-"21"	"New York"	357	19	0.949468085106383
-"22"	"The Strip"	104	6	0.945454545454545
-"23"	"Monterey"	17	1	0.944444444444444
-"24"	"Tampa"	17	1	0.944444444444444
-"25"	"Waikiki Beach"	16	1	0.941176470588235
-"26"	"Nashville"	31	2	0.939393939393939
-"27"	"Fort Myers"	15	1	0.9375
-"28"	"Miami International Airport"	15	1	0.9375
-"29"	"Broadway - Times Square"	44	3	0.936170212765957
-"30"	"New Orleans"	87	6	0.935483870967742
-"31"	"Grand Canyon"	14	1	0.933333333333333
-"32"	"Jacksonville"	14	1	0.933333333333333
-"33"	"Reno"	14	1	0.933333333333333
-"34"	"Hollywood"	13	1	0.928571428571429
-"35"	"Moab"	13	1	0.928571428571429
-"36"	"Seattle"	113	9	0.926229508196721
-"37"	"Key West"	50	4	0.925925925925926
-"38"	"Boston"	74	6	0.925
-"39"	"Newark"	12	1	0.923076923076923
-"40"	"Oakland"	12	1	0.923076923076923
-"41"	"Santa Fe"	12	1	0.923076923076923
-"42"	"Houston"	23	2	0.92
-"43"	"Niagara Falls"	23	2	0.92
-"44"	"Boulder"	11	1	0.916666666666667
-"45"	"Buffalo"	11	1	0.916666666666667
-"46"	"Panama City Beach"	11	1	0.916666666666667
-"47"	"Seattle-Tacoma International Airport"	11	1	0.916666666666667
-"48"	"Denver"	51	5	0.910714285714286
-"49"	"Portland"	51	5	0.910714285714286
-"50"	"St. Pete Beach"	10	1	0.909090909090909
-"51"	"Union Square"	20	2	0.909090909090909
-"52"	"San Francisco"	178	18	0.908163265306122
-"53"	"Charlotte"	19	2	0.904761904761905
-"54"	"French Quarter"	19	2	0.904761904761905
-"55"	"Chicago"	109	12	0.900826446280992
-"56"	"Cape Cod"	9	1	0.9
-"57"	"Mount Rushmore"	9	1	0.9
-"58"	"Palm Beach - West Palm Beach"	18	2	0.9
-"59"	"Rapid City"	9	1	0.9
-"60"	"Waikiki"	9	1	0.9
-"61"	"Minneapolis - St. Paul"	17	2	0.894736842105263
-"62"	"Washington"	66	8	0.891891891891892
-"63"	"Amarillo"	8	1	0.888888888888889
-"64"	"Asheville"	8	1	0.888888888888889
-"65"	"Cincinnati"	8	1	0.888888888888889
-"66"	"Columbia"	8	1	0.888888888888889
-"67"	"Denver International Airport"	8	1	0.888888888888889
-"68"	"Destin"	8	1	0.888888888888889
-"69"	"Disney Springs™ area - Lake Buena Vista"	8	1	0.888888888888889
-"70"	"Downtown San Diego"	8	1	0.888888888888889
-"71"	"Park City"	8	1	0.888888888888889
-"72"	"Pasadena"	8	1	0.888888888888889
-"73"	"Albuquerque"	15	2	0.882352941176471
-"74"	"Napa Valley"	15	2	0.882352941176471
-"75"	"Philadelphia"	30	4	0.882352941176471
-"76"	"Bar Harbor"	7	1	0.875
-"77"	"Beverly Hills - West Hollywood"	7	1	0.875
-"78"	"Branson"	7	1	0.875
-"79"	"Downtown Denver"	7	1	0.875
-"80"	"Downtown Washington D.C."	7	1	0.875
-"81"	"Jackson Hole"	21	3	0.875
-"82"	"Midtown East - Grand Central"	14	2	0.875
-"83"	"Phoenix"	42	6	0.875
-"84"	"San Jose - Silicon Valley"	21	3	0.875
-"85"	"Tacoma"	7	1	0.875
-"86"	"Tucson"	7	1	0.875
-"87"	"Bellevue"	6	1	0.857142857142857
-"88"	"Billings"	6	1	0.857142857142857
-"89"	"Colorado Springs"	12	2	0.857142857142857
-"90"	"Downtown Salt Lake City"	6	1	0.857142857142857
-"91"	"Estes Park"	6	1	0.857142857142857
-"92"	"Page"	6	1	0.857142857142857
-"93"	"Santa Barbara"	12	2	0.857142857142857
-"94"	"Savannah"	12	2	0.857142857142857
-"95"	"Wailea"	6	1	0.857142857142857
-"96"	"Salt Lake City"	23	4	0.851851851851852
-"97"	"Los Angeles Intl."	17	3	0.85
-"98"	"Orange County"	34	6	0.85
-"99"	"Atlantic City"	15	3	0.833333333333333
-"100"	"Baltimore"	10	2	0.833333333333333
-"101"	"Big Sky"	5	1	0.833333333333333
-"102"	"Eureka"	5	1	0.833333333333333
-"103"	"Hilton Head"	5	1	0.833333333333333
-"104"	"Louisville"	5	1	0.833333333333333
-"105"	"Zion National Park"	5	1	0.833333333333333
-"106"	"St. Louis"	14	3	0.823529411764706
-"107"	"Clearwater Beach"	9	2	0.818181818181818
-"108"	"Carlsbad"	4	1	0.8
-"109"	"Downtown Austin"	4	1	0.8
-"110"	"Eugene"	4	1	0.8
-"111"	"Grand Rapids"	4	1	0.8
-"112"	"SoHo - Tribeca"	4	1	0.8
-"113"	"Telluride"	4	1	0.8
-"114"	"Walt Disney World® area"	4	1	0.8
-"115"	"Washington Dulles International Airport"	4	1	0.8
-"116"	"Wilmington"	4	1	0.8
-"117"	"Back Bay"	7	2	0.777777777777778
-"118"	"Newport"	7	2	0.777777777777778
-"119"	"West Yellowstone"	10	3	0.769230769230769
-"120"	"Downtown Seattle"	13	4	0.764705882352941
-"121"	"Cocoa Beach"	3	1	0.75
-"122"	"Crescent City"	3	1	0.75
-"123"	"Downtown Portland"	9	3	0.75
-"124"	"East Village - Lower East Side"	3	1	0.75
-"125"	"Galveston"	6	2	0.75
-"126"	"Greensboro"	3	1	0.75
-"127"	"New Haven"	3	1	0.75
-"128"	"Orlando International Airport"	6	2	0.75
-"129"	"Pensacola Beach"	3	1	0.75
-"130"	"Portland International Airport"	3	1	0.75
-"131"	"Redwood City"	3	1	0.75
-"132"	"Santa Monica"	3	1	0.75
-"133"	"St. George"	3	1	0.75
-"134"	"Vancouver"	3	1	0.75
-"135"	"San Francisco International Airport"	8	3	0.727272727272727
-"136"	"Scottsdale"	8	3	0.727272727272727
-"137"	"Chicago O'Hare International Airport"	5	2	0.714285714285714
-"138"	"Dallas-Fort Worth International Airport"	5	2	0.714285714285714
-"139"	"Fisherman's Wharf"	5	2	0.714285714285714
-"140"	"Flagstaff"	5	2	0.714285714285714
-"141"	"Salem"	5	2	0.714285714285714
-"142"	"Akron"	2	1	0.666666666666667
-"143"	"Boise"	8	4	0.666666666666667
-"144"	"Casper"	2	1	0.666666666666667
-"145"	"Charlotte-Douglas International Airport"	2	1	0.666666666666667
-"146"	"Chattanooga"	2	1	0.666666666666667
-"147"	"Decatur"	2	1	0.666666666666667
-"148"	"Downtown Santa Fe"	2	1	0.666666666666667
-"149"	"Fairbanks"	2	1	0.666666666666667
-"150"	"Grand Teton National Park"	2	1	0.666666666666667
-"151"	"Hilo"	2	1	0.666666666666667
-"152"	"Historic Charleston"	2	1	0.666666666666667
-"153"	"Kent"	2	1	0.666666666666667
-"154"	"Knoxville"	2	1	0.666666666666667
-"155"	"Las Cruces"	2	1	0.666666666666667
-"156"	"Layton"	2	1	0.666666666666667
-"157"	"Manchester"	2	1	0.666666666666667
-"158"	"Memphis"	2	1	0.666666666666667
-"159"	"Midtown West"	2	1	0.666666666666667
-"160"	"Missoula"	2	1	0.666666666666667
-"161"	"Newton"	2	1	0.666666666666667
-"162"	"Outer Banks"	2	1	0.666666666666667
-"163"	"Pike Place Market"	2	1	0.666666666666667
-"164"	"Port Angeles"	2	1	0.666666666666667
-"165"	"Raleigh"	4	2	0.666666666666667
-"166"	"Redding"	2	1	0.666666666666667
-"167"	"Sanibel"	2	1	0.666666666666667
-"168"	"Sonoma Valley"	4	2	0.666666666666667
-"169"	"Spokane"	2	1	0.666666666666667
-"170"	"Stanford University"	2	1	0.666666666666667
-"171"	"Syracuse"	2	1	0.666666666666667
-"172"	"The Dalles"	2	1	0.666666666666667
-"173"	"Universal Orlando® area"	2	1	0.666666666666667
-"174"	"Ventura - Oxnard"	2	1	0.666666666666667
-"175"	"White Plains"	2	1	0.666666666666667
-"176"	"Birmingham"	3	2	0.6
-"177"	"Bozeman"	3	2	0.6
-"178"	"Bryce Canyon National Park"	3	2	0.6
-"179"	"Ontario"	3	2	0.6
-"180"	"Fort Collins"	4	3	0.571428571428571
-"181"	"Albany International Airport"	1	1	0.5
-"182"	"Battle Creek"	1	1	0.5
-"183"	"Bloomington"	1	1	0.5
-"184"	"Burbank"	1	1	0.5
-"185"	"Coronado"	1	1	0.5
-"186"	"Cortez"	1	1	0.5
-"187"	"Denison"	1	1	0.5
-"188"	"Durham"	1	1	0.5
-"189"	"Grand Canyon National Park"	1	1	0.5
-"190"	"Harrisburg"	1	1	0.5
-"191"	"Hayward"	1	1	0.5
-"192"	"Homer"	1	1	0.5
-"193"	"Huntington Beach - North Beaches"	1	1	0.5
-"194"	"Lake Powell"	1	1	0.5
-"195"	"Lebanon"	1	1	0.5
-"196"	"Lexington"	2	2	0.5
-"197"	"Long Beach"	2	2	0.5
-"198"	"Marysville"	1	1	0.5
-"199"	"McCall"	1	1	0.5
-"200"	"Melbourne"	1	1	0.5
-"201"	"Murfreesboro"	1	1	0.5
-"202"	"Newark Liberty International Airport"	2	2	0.5
-"203"	"Rexburg"	1	1	0.5
-"204"	"Siesta Key"	1	1	0.5
-"205"	"Southern Methodist University"	1	1	0.5
-"206"	"T.F. Green Airport"	2	2	0.5
-"207"	"Tallahassee"	1	1	0.5
-"208"	"Temple"	1	1	0.5
-"209"	"Tusayan"	1	1	0.5
-"210"	"University at Albany SUNY"	1	1	0.5
-"211"	"University of Arizona"	1	1	0.5
-"212"	"University of Phoenix Stadium"	1	1	0.5
-"213"	"Venice"	1	1	0.5
-"214"	"Wall"	1	1	0.5
-"215"	"West Hollywood"	2	2	0.5
-"216"	"Albuquerque International Sunport"	2	3	0.4
-"217"	"Appleton - Lake Winnebago"	2	3	0.4
-"218"	"Biloxi"	1	2	0.333333333333333
-"219"	"Center City"	1	2	0.333333333333333
-"220"	"Lambert-St. Louis International Airport"	1	2	0.333333333333333
-"221"	"Napa"	1	2	0.333333333333333
-"222"	"Rochester"	1	2	0.333333333333333
+"","city","count_no","count_yes","ratio"
+"1","Miami Beach",114,2,0.982758620689655
+"2","Manhattan",50,1,0.980392156862745
+"3","Myrtle Beach",48,1,0.979591836734694
+"4","Hawaii",43,1,0.977272727272727
+"5","Atlanta",36,1,0.972972972972973
+"6","San Diego",122,4,0.968253968253968
+"7","Oahu Island",83,3,0.965116279069767
+"8","Maui Island",103,4,0.962616822429907
+"9","Orlando",255,10,0.962264150943396
+"10","Los Angeles",124,5,0.961240310077519
+"11","Charleston",22,1,0.956521739130435
+"12","South Beach",44,2,0.956521739130435
+"13","St. Petersburg - Clearwater",22,1,0.956521739130435
+"14","Yosemite National Park",22,1,0.956521739130435
+"15","Las Vegas",589,28,0.954619124797407
+"16","Honolulu",42,2,0.954545454545455
+"17","Miami",210,10,0.954545454545455
+"18","Fort Lauderdale",96,5,0.95049504950495
+"19","Austin",19,1,0.95
+"20","Fort Walton Beach - Destin",19,1,0.95
+"21","New York",357,19,0.949468085106383
+"22","The Strip",104,6,0.945454545454545
+"23","Monterey",17,1,0.944444444444444
+"24","Tampa",17,1,0.944444444444444
+"25","Waikiki Beach",16,1,0.941176470588235
+"26","Nashville",31,2,0.939393939393939
+"27","Fort Myers",15,1,0.9375
+"28","Miami International Airport",15,1,0.9375
+"29","Broadway - Times Square",44,3,0.936170212765957
+"30","New Orleans",87,6,0.935483870967742
+"31","Grand Canyon",14,1,0.933333333333333
+"32","Jacksonville",14,1,0.933333333333333
+"33","Reno",14,1,0.933333333333333
+"34","Hollywood",13,1,0.928571428571429
+"35","Moab",13,1,0.928571428571429
+"36","Seattle",113,9,0.926229508196721
+"37","Key West",50,4,0.925925925925926
+"38","Boston",74,6,0.925
+"39","Newark",12,1,0.923076923076923
+"40","Oakland",12,1,0.923076923076923
+"41","Santa Fe",12,1,0.923076923076923
+"42","Houston",23,2,0.92
+"43","Niagara Falls",23,2,0.92
+"44","Boulder",11,1,0.916666666666667
+"45","Buffalo",11,1,0.916666666666667
+"46","Panama City Beach",11,1,0.916666666666667
+"47","Seattle-Tacoma International Airport",11,1,0.916666666666667
+"48","Denver",51,5,0.910714285714286
+"49","Portland",51,5,0.910714285714286
+"50","St. Pete Beach",10,1,0.909090909090909
+"51","Union Square",20,2,0.909090909090909
+"52","San Francisco",178,18,0.908163265306122
+"53","Charlotte",19,2,0.904761904761905
+"54","French Quarter",19,2,0.904761904761905
+"55","Chicago",109,12,0.900826446280992
+"56","Cape Cod",9,1,0.9
+"57","Mount Rushmore",9,1,0.9
+"58","Palm Beach - West Palm Beach",18,2,0.9
+"59","Rapid City",9,1,0.9
+"60","Waikiki",9,1,0.9
+"61","Minneapolis - St. Paul",17,2,0.894736842105263
+"62","Washington",66,8,0.891891891891892
+"63","Amarillo",8,1,0.888888888888889
+"64","Asheville",8,1,0.888888888888889
+"65","Cincinnati",8,1,0.888888888888889
+"66","Columbia",8,1,0.888888888888889
+"67","Denver International Airport",8,1,0.888888888888889
+"68","Destin",8,1,0.888888888888889
+"69","Disney Springs™ area - Lake Buena Vista",8,1,0.888888888888889
+"70","Downtown San Diego",8,1,0.888888888888889
+"71","Park City",8,1,0.888888888888889
+"72","Pasadena",8,1,0.888888888888889
+"73","Albuquerque",15,2,0.882352941176471
+"74","Napa Valley",15,2,0.882352941176471
+"75","Philadelphia",30,4,0.882352941176471
+"76","Bar Harbor",7,1,0.875
+"77","Beverly Hills - West Hollywood",7,1,0.875
+"78","Branson",7,1,0.875
+"79","Downtown Denver",7,1,0.875
+"80","Downtown Washington D.C.",7,1,0.875
+"81","Jackson Hole",21,3,0.875
+"82","Midtown East - Grand Central",14,2,0.875
+"83","Phoenix",42,6,0.875
+"84","San Jose - Silicon Valley",21,3,0.875
+"85","Tacoma",7,1,0.875
+"86","Tucson",7,1,0.875
+"87","Bellevue",6,1,0.857142857142857
+"88","Billings",6,1,0.857142857142857
+"89","Colorado Springs",12,2,0.857142857142857
+"90","Downtown Salt Lake City",6,1,0.857142857142857
+"91","Estes Park",6,1,0.857142857142857
+"92","Page",6,1,0.857142857142857
+"93","Santa Barbara",12,2,0.857142857142857
+"94","Savannah",12,2,0.857142857142857
+"95","Wailea",6,1,0.857142857142857
+"96","Salt Lake City",23,4,0.851851851851852
+"97","Los Angeles Intl.",17,3,0.85
+"98","Orange County",34,6,0.85
+"99","Atlantic City",15,3,0.833333333333333
+"100","Baltimore",10,2,0.833333333333333
+"101","Big Sky",5,1,0.833333333333333
+"102","Eureka",5,1,0.833333333333333
+"103","Hilton Head",5,1,0.833333333333333
+"104","Louisville",5,1,0.833333333333333
+"105","Zion National Park",5,1,0.833333333333333
+"106","St. Louis",14,3,0.823529411764706
+"107","Clearwater Beach",9,2,0.818181818181818
+"108","Carlsbad",4,1,0.8
+"109","Downtown Austin",4,1,0.8
+"110","Eugene",4,1,0.8
+"111","Grand Rapids",4,1,0.8
+"112","SoHo - Tribeca",4,1,0.8
+"113","Telluride",4,1,0.8
+"114","Walt Disney World® area",4,1,0.8
+"115","Washington Dulles International Airport",4,1,0.8
+"116","Wilmington",4,1,0.8
+"117","Back Bay",7,2,0.777777777777778
+"118","Newport",7,2,0.777777777777778
+"119","West Yellowstone",10,3,0.769230769230769
+"120","Downtown Seattle",13,4,0.764705882352941
+"121","Cocoa Beach",3,1,0.75
+"122","Crescent City",3,1,0.75
+"123","Downtown Portland",9,3,0.75
+"124","East Village - Lower East Side",3,1,0.75
+"125","Galveston",6,2,0.75
+"126","Greensboro",3,1,0.75
+"127","New Haven",3,1,0.75
+"128","Orlando International Airport",6,2,0.75
+"129","Pensacola Beach",3,1,0.75
+"130","Portland International Airport",3,1,0.75
+"131","Redwood City",3,1,0.75
+"132","Santa Monica",3,1,0.75
+"133","St. George",3,1,0.75
+"134","Vancouver",3,1,0.75
+"135","San Francisco International Airport",8,3,0.727272727272727
+"136","Scottsdale",8,3,0.727272727272727
+"137","Chicago O'Hare International Airport",5,2,0.714285714285714
+"138","Dallas-Fort Worth International Airport",5,2,0.714285714285714
+"139","Fisherman's Wharf",5,2,0.714285714285714
+"140","Flagstaff",5,2,0.714285714285714
+"141","Salem",5,2,0.714285714285714
+"142","Akron",2,1,0.666666666666667
+"143","Boise",8,4,0.666666666666667
+"144","Casper",2,1,0.666666666666667
+"145","Charlotte-Douglas International Airport",2,1,0.666666666666667
+"146","Chattanooga",2,1,0.666666666666667
+"147","Decatur",2,1,0.666666666666667
+"148","Downtown Santa Fe",2,1,0.666666666666667
+"149","Fairbanks",2,1,0.666666666666667
+"150","Grand Teton National Park",2,1,0.666666666666667
+"151","Hilo",2,1,0.666666666666667
+"152","Historic Charleston",2,1,0.666666666666667
+"153","Kent",2,1,0.666666666666667
+"154","Knoxville",2,1,0.666666666666667
+"155","Las Cruces",2,1,0.666666666666667
+"156","Layton",2,1,0.666666666666667
+"157","Manchester",2,1,0.666666666666667
+"158","Memphis",2,1,0.666666666666667
+"159","Midtown West",2,1,0.666666666666667
+"160","Missoula",2,1,0.666666666666667
+"161","Newton",2,1,0.666666666666667
+"162","Outer Banks",2,1,0.666666666666667
+"163","Pike Place Market",2,1,0.666666666666667
+"164","Port Angeles",2,1,0.666666666666667
+"165","Raleigh",4,2,0.666666666666667
+"166","Redding",2,1,0.666666666666667
+"167","Sanibel",2,1,0.666666666666667
+"168","Sonoma Valley",4,2,0.666666666666667
+"169","Spokane",2,1,0.666666666666667
+"170","Stanford University",2,1,0.666666666666667
+"171","Syracuse",2,1,0.666666666666667
+"172","The Dalles",2,1,0.666666666666667
+"173","Universal Orlando® area",2,1,0.666666666666667
+"174","Ventura - Oxnard",2,1,0.666666666666667
+"175","White Plains",2,1,0.666666666666667
+"176","Birmingham",3,2,0.6
+"177","Bozeman",3,2,0.6
+"178","Bryce Canyon National Park",3,2,0.6
+"179","Ontario",3,2,0.6
+"180","Fort Collins",4,3,0.571428571428571
+"181","Albany International Airport",1,1,0.5
+"182","Battle Creek",1,1,0.5
+"183","Bloomington",1,1,0.5
+"184","Burbank",1,1,0.5
+"185","Coronado",1,1,0.5
+"186","Cortez",1,1,0.5
+"187","Denison",1,1,0.5
+"188","Durham",1,1,0.5
+"189","Grand Canyon National Park",1,1,0.5
+"190","Harrisburg",1,1,0.5
+"191","Hayward",1,1,0.5
+"192","Homer",1,1,0.5
+"193","Huntington Beach - North Beaches",1,1,0.5
+"194","Lake Powell",1,1,0.5
+"195","Lebanon",1,1,0.5
+"196","Lexington",2,2,0.5
+"197","Long Beach",2,2,0.5
+"198","Marysville",1,1,0.5
+"199","McCall",1,1,0.5
+"200","Melbourne",1,1,0.5
+"201","Murfreesboro",1,1,0.5
+"202","Newark Liberty International Airport",2,2,0.5
+"203","Rexburg",1,1,0.5
+"204","Siesta Key",1,1,0.5
+"205","Southern Methodist University",1,1,0.5
+"206","T.F. Green Airport",2,2,0.5
+"207","Tallahassee",1,1,0.5
+"208","Temple",1,1,0.5
+"209","Tusayan",1,1,0.5
+"210","University at Albany SUNY",1,1,0.5
+"211","University of Arizona",1,1,0.5
+"212","University of Phoenix Stadium",1,1,0.5
+"213","Venice",1,1,0.5
+"214","Wall",1,1,0.5
+"215","West Hollywood",2,2,0.5
+"216","Albuquerque International Sunport",2,3,0.4
+"217","Appleton - Lake Winnebago",2,3,0.4
+"218","Biloxi",1,2,0.333333333333333
+"219","Center City",1,2,0.333333333333333
+"220","Lambert-St. Louis International Airport",1,2,0.333333333333333
+"221","Napa",1,2,0.333333333333333
+"222","Rochester",1,2,0.333333333333333
