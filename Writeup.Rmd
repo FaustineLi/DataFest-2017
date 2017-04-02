@@ -1,0 +1,40 @@
+---
+title: "Five Sigma"
+author: 'Huang Huang, Faustine Li, Xichu Liu, Xiaozhou Wang, Beau Coker'
+output:
+  pdf_document: default
+  html_document: default
+geometry: margin=.6in
+---
+\pagenumbering{gobble}
+
+#### Motivation
+
+Our analysis sought to distinguish _bookers_ (users who booked a hotel after searching) from _lookers_ (users who did not book a hotel after searching). We considered this question from the perspective of geography -- by identifying faraway cities for which users tend to search but not book -- and from the perspective of time -- by modeling the probability of booking as a function of the number of clicks during a single session.
+
+#### Method
+ 
+_Slide 1_: To study the preferences of lookers, we rank metropolitan area by proportion of lookers among total searchers. 
+
+_Slide 2_:
+
+_Slide 3_: We model the probability of booking, $P(Y=1)$, as a function of the number clicks during a session, $x$, and $p$ covariates $z_{l}$, by supposing a Generalized Additive Model with a logistic link function.
+$$
+\text{logit}\left( P(Y_i=1) \right)= \mu(x_i) + \sum_{l=1}^{p} \theta_l z_{il} + \epsilon_i
+$$
+We define a session to be a sequence of clicks related to a single destination and separated by less than 24 hours. The covariates we include are whether or not the user was on a mobile device, the average number of children, adults, rooms and stars of the hotels in the session, and, inspired by our geographical analysis, an indicator of whether the destination was more than 500 miles away.
+
+We expect a nonlinear relationship between the probability of booking and the number of clicks. So, we choose a flexible approach for $\mu(x)$ by doing basis expansion with a normal kernel. That is, we suppose $\mu(x_i)=\sum_{k=1}^K\theta_kb_k(x_i)$, where $b_k=\exp(-\frac{\psi_k}{2}\left(x-\tau_k)\right)$ (we also add a constant term $b_0$). To choose the number of kernels $K$ and the location of the kernels $\tau_k$, we place kernels at the unique values of $x$. 
+
+Doing this basis expansion results in a large number of predictors, so we regularize by adding an $L_1$ penalty term on the coefficients to our logistic regression (i.e., Lasso). From a Bayesian perspective, this is analogous to putting a double exponential prior on the coefficients (where the MAP would correspond to the frequentist estimates). 
+
+The dataset is large for fitting this model. Therefore, we choose a random sample of users with more than 250 entries in the dataset. To fit the frequentist model, we do cross validation to choose the penalty parameter $\lambda$ (using the `glmnet` package) on a random sample of users corresponding to 21833 observations from the dataset. Using the optimal $\lambda$ we fit the model on a larger random sample (136040 observations). To fit the Bayesian model, we use `JAGS` on a small sample of 1454 observations. The _click response curve_ represents the probability of booking as a function of the number of clicks and for an average value of the other covariates.
+
+
+
+#### Results
+
+  - The probability of booking at first increases with the number clicks and then decreases. Understanding this typical trajectory could be used to adjust display results or prices before a user's probability drops too far.
+
+  
+
