@@ -10,14 +10,10 @@ library(data.table)
 ```
  
 ```{r}
-expedia = read_tsv('data.txt')
-expedia = fread('data.txt')
+expedia = read_tsv('data/data.txt')
+dest = read_tsv('data/dest.txt')
 ```
 
-```{r}
-dest = read_tsv('dest.txt')
-dest = fread('dest.txt')
-```
 
 ```{r}
 data = expedia %>% 
@@ -66,7 +62,6 @@ merged = merged %>% mutate(net = log(abs(n.y - n.x)) * sign(n.y - n.x))
 library("ggmap")
 library(ggplot2)
 library(devtools)
-install_version("ggplot2", version = "2.1.0", repos = "http://cran.us.r-project.org")
 ```
 
 
